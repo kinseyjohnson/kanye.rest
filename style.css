@@ -1,0 +1,30 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+body {
+    background-color: rgb(233, 220, 242);
+}
+
+h1 {
+    font-weight: lighter;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 300px;
+}
+
+#quoteHere {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+button {
+    /* display: flex;
+    justify-content: center; */
+    font-size: 15px;
+    margin: 0 auto;
+    display: block;
+}
