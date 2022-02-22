@@ -10,7 +10,9 @@ quoteButton.addEventListener("click", e => {
     .then(res => res.json())
     .then(quote => {
         console.log(quote)
-        quoteDiv.innerHTML = `<p>"${quote.quote}" -kanye</p>`
+        quoteDiv.innerHTML = `<p>"${quote.quote}" -kanye</p> <br> <a class="twitter-share-button"
+        href="https://twitter.com/intent/tweet?text=${quote.quote} -kanye" target="_blank">
+        Tweet</a>`
         })
         });
 }
