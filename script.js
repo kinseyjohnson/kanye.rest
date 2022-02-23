@@ -31,9 +31,13 @@ quoteButton.addEventListener("click", e => {
 
 let twitterButton = document.getElementById("tweet")
 
-twitterButton.addEventListener("click", e => {
-    window.open(`https://twitter.com/`)
-
+fetch('https://api.kanye.rest')
+.then(res => res.json())
+.then(quote => {
+    twitterButton.addEventListener("click", e => {
+        window.open(`https://twitter.com/intent/tweet?text=${quote.quote} -kanye`)
+    })
 })
+
 
 }
