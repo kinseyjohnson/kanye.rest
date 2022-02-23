@@ -7,9 +7,7 @@ fetch('https://api.kanye.rest')
 .then(res => res.json())
 .then(quote => {
     console.log(quote)
-    quoteHere.innerHTML = `<p> ${quote.quote} -kanye </p> <a class="twitter-share-button"
-    href="https://twitter.com/intent/tweet?text=${quote.quote} -kanye" target="_blank">
-    tweet it</a>`
+    quoteHere.innerHTML = `<p> ${quote.quote} -kanye </p>`
 })  
 
 //new quote
@@ -25,9 +23,17 @@ quoteButton.addEventListener("click", e => {
     .then(res => res.json())
     .then(quote => {
         console.log(quote)
-        quoteHere.innerHTML = `<p>"${quote.quote}" -kanye <a class="twitter-share-button"
-        href="https://twitter.com/intent/tweet?text=${quote.quote} -kanye" target="_blank">
-        tweet it</a></p>`
+        quoteHere.innerHTML = `<p>"${quote.quote}" -kanye </p>`
         })
         });
-    }
+        
+    
+
+let twitterButton = document.getElementById("tweet")
+
+twitterButton.addEventListener("click", e => {
+    window.open(`https://twitter.com/`)
+
+})
+
+}
