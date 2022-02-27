@@ -7,7 +7,7 @@ fetch('https://api.kanye.rest')
 .then(res => res.json())
 .then(quote => {
     console.log(quote)
-    quoteHere.innerHTML = `<p> ${quote.quote} -kanye </p>`
+    quoteHere.innerHTML = `${quote.quote} -kanye`
 })  
 
 //new quote
@@ -24,7 +24,7 @@ quoteButton.addEventListener("click", e => {
     .then(res => res.json())
     .then(quote => {
         console.log(quote)
-        quoteHere.innerHTML = `<p>"${quote.quote}" -kanye </p>`
+        quoteHere.innerHTML = `<p>${quote.quote}" -kanye </p>`
         })
         });
         
@@ -38,9 +38,8 @@ fetch('https://api.kanye.rest')
 .then(res => res.json())
 .then(quote => {
     twitterButton.addEventListener("click", e => {
-        window.open(`https://twitter.com/intent/tweet?text=${quote.quote} -kanye`)
+        window.open(`https://twitter.com/intent/tweet?text=${quoteHere.innerHTML}`)
     })
 })
-
 
 }
