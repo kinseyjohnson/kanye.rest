@@ -30,7 +30,7 @@ quoteButton.addEventListener("click", e => {
         
     
 
-//this is pulling a random quote, not the quote already shown on the screen
+
 
 let twitterButton = document.getElementById("tweet")
 
