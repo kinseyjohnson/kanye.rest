@@ -14,6 +14,7 @@ fetch('https://api.kanye.rest')
 
 let quoteButton = document.getElementById("button")
 
+
 quoteButton.addEventListener("click", e => {
 
     // let quoteDiv = document.getElementById("quoteDisplay")
@@ -28,6 +29,8 @@ quoteButton.addEventListener("click", e => {
         });
         
     
+
+//this is pulling a random quote, not the quote already shown on the screen
 
 let twitterButton = document.getElementById("tweet")
 
