@@ -30,8 +30,6 @@ quoteButton.addEventListener("click", e => {
         
     
 
-
-
 let twitterButton = document.getElementById("tweet")
 
 fetch('https://api.kanye.rest')
